@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".permission.PermissionStudyActivity">
+
+    <Button
+        android:id="@+id/locationBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位权限申请"
+        app:layout_constraintBottom_toTopOf="@+id/recordBt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/locationMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationBt" />
+
+    <Button
+        android:id="@+id/recordBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录音权限"
+        app:layout_constraintBottom_toTopOf="@+id/readBt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationBt" />
+
+    <Button
+        android:id="@+id/readBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件读写权限"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordBt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
